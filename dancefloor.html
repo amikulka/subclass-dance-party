@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Sigmar+One&display=swap" rel="stylesheet">
   <head>
     <title>Object Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/queenBee.js"></script>
+    <script src="src/waggleBee.js"></script>
   </head>
   <body>
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <span class="title">ODP</span>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="QueenBee">add a queen bee</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="WaggleBee">add a waggle bee</a>
+      <a href="#" class="lineupButton">get in formation!</a>
+      <a href="#" class="randomButton">randomize position</a>
+    </div>
     <script src="src/init.js"></script>
   </body>
 </html>

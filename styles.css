@@ -3,25 +3,64 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /*background-color:#444;*/
   font-size: 18px;
+  background-image: url('src/img/Honey.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: yellow;
+  text-decoration: none;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .lineupButton, .randomButton{
   padding:5px 12px;
-  float:right;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: yellow;
 }
 .topbar{
-  height:32px;
-  background-color: #555;
+  height:auto;
+  background-color:purple;
+  display: flex;
+  justify-content: space-evenly;
 }
 .title{
-  background-color: #777;
+  background-color: black;
 }
 .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.beyonce, .waggleBee{
+  height: 100%;
+  width : auto;
+  color: black;
+
+}
+.queen{
+  height: 120px;
+  width: auto;
+  position: absolute;
+}
+
+.waggle {
+  height: 150px;
+  width: auto;
+  position: absolute;
+
+}
+.waggleBeeLeft{
+  height: 100%;
+  width: auto;
+  transform: rotate(30deg);
+}
+
+.caption {
+display: block;
+text-align: center;
+color: black;
+font-family: 'Sigmar One', cursive, sans-serif;
+font-size: large;
 }

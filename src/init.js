@@ -22,12 +22,33 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      Math.random() * 700 + 300
     );
+
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
   });
+
+  $('.lineupButton').on('click', function () {
+    let numberOfDancers = window.dancers.length;
+    window.dancers.forEach((dancer, index) => {
+      dancer.lineUp(index + 1, numberOfDancers);
+    });
+  });
+
+  $('.randomButton').on('click', function () {
+    window.dancers.forEach((dancer) => {
+      dancer.setPosition($("body").height() * Math.random(), $("body").width() * Math.random());
+    });
+  });
+
+  // $('body.queen').mouseover(function() {
+  //   $(this).find('span').text('SLAY');
+  // });
+
+
 });
 
